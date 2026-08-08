@@ -160,6 +160,14 @@ function renderProjects() {
         </div>
       ` : ''}
 
+      ${proj.githubUrl ? `
+        <div style="margin-top: 1.25rem;">
+          <a href="${proj.githubUrl}" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%; justify-content: center; gap: 0.6rem;">
+            <i class="fa-brands fa-github" style="font-size: 1.1rem;"></i> View Public GitHub Repository
+          </a>
+        </div>
+      ` : ''}
+
       <div class="skill-tags" style="margin-top: 1.25rem;">
         ${proj.tags.map(t => `<span class="tag">${t}</span>`).join('')}
       </div>
