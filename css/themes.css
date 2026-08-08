@@ -1,0 +1,169 @@
+/* ==========================================
+   THEME DEFINITIONS & COLOR SYSTEM
+   Default Theme: Cyber Security Slate
+   ========================================== */
+
+/* 1. CYBER SECURITY SLATE (Default) */
+:root, [data-theme="cyber"] {
+  --bg-primary: #0a0e17;
+  --bg-secondary: #111827;
+  --bg-tertiary: #1b2438;
+  --bg-card: rgba(17, 24, 39, 0.75);
+  --bg-card-hover: rgba(27, 36, 56, 0.85);
+  
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --accent-primary: #00f2fe;
+  --accent-secondary: #4facfe;
+  --accent-glow: rgba(0, 242, 254, 0.25);
+  --accent-gradient: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+  --accent-gradient-hover: linear-gradient(135deg, #38f9d7 0%, #4facfe 100%);
+  
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-highlight: rgba(0, 242, 254, 0.3);
+  
+  --badge-bg: rgba(0, 242, 254, 0.1);
+  --badge-text: #38bdf8;
+  --badge-border: rgba(0, 242, 254, 0.25);
+
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 242, 254, 0.15);
+
+  --terminal-bg: #070a10;
+  --terminal-header: #141c2e;
+  --nav-bg: rgba(10, 14, 23, 0.85);
+}
+
+/* 2. OBSIDIAN VIOLET */
+[data-theme="obsidian"] {
+  --bg-primary: #0b0813;
+  --bg-secondary: #151024;
+  --bg-tertiary: #221a38;
+  --bg-card: rgba(21, 16, 36, 0.75);
+  --bg-card-hover: rgba(34, 26, 56, 0.85);
+  
+  --text-main: #f8f7ff;
+  --text-muted: #a7a2c4;
+  --text-dim: #736b94;
+  
+  --accent-primary: #a855f7;
+  --accent-secondary: #c084fc;
+  --accent-glow: rgba(168, 85, 247, 0.25);
+  --accent-gradient: linear-gradient(135deg, #a855f7 0%, #6366f1 100%);
+  --accent-gradient-hover: linear-gradient(135deg, #c084fc 0%, #818cf8 100%);
+  
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-highlight: rgba(168, 85, 247, 0.35);
+  
+  --badge-bg: rgba(168, 85, 247, 0.12);
+  --badge-text: #c084fc;
+  --badge-border: rgba(168, 85, 247, 0.3);
+
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.6), 0 0 18px rgba(168, 85, 247, 0.2);
+
+  --terminal-bg: #07050d;
+  --terminal-header: #1b142e;
+  --nav-bg: rgba(11, 8, 19, 0.85);
+}
+
+/* 3. EMERALD MATRIX */
+[data-theme="emerald"] {
+  --bg-primary: #07120d;
+  --bg-secondary: #0f1f18;
+  --bg-tertiary: #172e24;
+  --bg-card: rgba(15, 31, 24, 0.75);
+  --bg-card-hover: rgba(23, 46, 36, 0.85);
+  
+  --text-main: #f0fdf4;
+  --text-muted: #86efac;
+  --text-dim: #4ade80;
+  
+  --accent-primary: #10b981;
+  --accent-secondary: #34d399;
+  --accent-glow: rgba(16, 185, 129, 0.25);
+  --accent-gradient: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  --accent-gradient-hover: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-highlight: rgba(16, 185, 129, 0.35);
+  
+  --badge-bg: rgba(16, 185, 129, 0.12);
+  --badge-text: #34d399;
+  --badge-border: rgba(16, 185, 129, 0.3);
+
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.6), 0 0 18px rgba(16, 185, 129, 0.2);
+
+  --terminal-bg: #040a07;
+  --terminal-header: #11241c;
+  --nav-bg: rgba(7, 18, 13, 0.85);
+}
+
+/* 4. EXECUTIVE NAVY */
+[data-theme="navy"] {
+  --bg-primary: #08101d;
+  --bg-secondary: #0f1c30;
+  --bg-tertiary: #192a45;
+  --bg-card: rgba(15, 28, 48, 0.75);
+  --bg-card-hover: rgba(25, 42, 69, 0.85);
+  
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --accent-primary: #eab308;
+  --accent-secondary: #facc15;
+  --accent-glow: rgba(234, 179, 8, 0.25);
+  --accent-gradient: linear-gradient(135deg, #eab308 0%, #ca8a04 100%);
+  --accent-gradient-hover: linear-gradient(135deg, #facc15 0%, #eab308 100%);
+  
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-highlight: rgba(234, 179, 8, 0.35);
+  
+  --badge-bg: rgba(234, 179, 8, 0.12);
+  --badge-text: #facc15;
+  --badge-border: rgba(234, 179, 8, 0.3);
+
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.6), 0 0 18px rgba(234, 179, 8, 0.18);
+
+  --terminal-bg: #04080f;
+  --terminal-header: #122138;
+  --nav-bg: rgba(8, 16, 29, 0.85);
+}
+
+/* 5. PRISTINE LIGHT */
+[data-theme="pristine"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f1f5f9;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-card-hover: rgba(241, 245, 249, 0.95);
+  
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-dim: #64748b;
+  
+  --accent-primary: #0284c7;
+  --accent-secondary: #2563eb;
+  --accent-glow: rgba(2, 132, 199, 0.2);
+  --accent-gradient: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+  --accent-gradient-hover: linear-gradient(135deg, #0369a1 0%, #1d4ed8 100%);
+  
+  --border-color: rgba(15, 23, 42, 0.1);
+  --border-highlight: rgba(2, 132, 199, 0.4);
+  
+  --badge-bg: rgba(2, 132, 199, 0.08);
+  --badge-text: #0284c7;
+  --badge-border: rgba(2, 132, 199, 0.25);
+
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 0 15px rgba(2, 132, 199, 0.1);
+
+  --terminal-bg: #0f172a;
+  --terminal-header: #1e293b;
+  --nav-bg: rgba(248, 250, 252, 0.88);
+}

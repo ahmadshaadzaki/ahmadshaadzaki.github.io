@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cyber">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmad Shaad Zaki | System Administrator & IAM Specialist Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Professional portfolio of Ahmad Shaad Zaki - B.Tech CSE Graduate, System Administrator, and Identity & Access Management (IAM) Specialist with hands-on lab experience in Windows Server 2022, Active Directory, PowerShell automation, and Networking.">
+  <meta name="keywords" content="Ahmad Shaad Zaki, System Administrator, Active Directory, IAM, PowerShell, SC-900, Windows Server 2022, IT Support, Help Desk, Network Administrator">
+  <meta name="author" content="Ahmad Shaad Zaki">
+
+  <!-- OpenGraph Meta Tags for LinkedIn Sharing -->
+  <meta property="og:title" content="Ahmad Shaad Zaki | System Administrator & IAM Specialist">
+  <meta property="og:description" content="Explore my hands-on virtual lab infrastructure, Active Directory domain configurations, PowerShell automation scripts, and IAM governance projects.">
+  <meta property="og:image" content="My photo.jpeg">
+  <meta property="og:type" content="website">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- JSON-LD Structured Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ahmad Shaad Zaki",
+    "jobTitle": "System Administrator & IAM Specialist",
+    "email": "mailto:ahmadalig20@gmail.com",
+    "telephone": "+91-8218771108",
+    "alumniOf": ["AKTU", "UPBTE"],
+    "knowsAbout": ["Windows Server 2022", "Active Directory", "PowerShell", "Identity & Access Management", "SC-900", "Networking"],
+    "sameAs": [
+      "https://linkedin.com/in/ahmadshaadzaki"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & STICKY NAVIGATION BAR
+       ========================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <div class="brand-icon">
+          <i class="fa-solid fa-terminal"></i>
+        </div>
+        <span>AHMAD SHAAD ZAKI</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills Matrix</a></li>
+        <li><a href="#projects" class="nav-link">Hands-On Labs</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline" id="themeToggleBtn" title="Select Theme">
+          <i class="fa-solid fa-palette"></i>
+          <span id="currentThemeName" class="hide-mobile">Cyber Security Slate</span>
+        </button>
+
+        <button class="btn btn-icon-only" data-modal-open="securityModal" title="Security & Privacy Information">
+          <i class="fa-solid fa-shield-halved" style="color: var(--accent-primary);"></i>
+        </button>
+
+        <a href="Ahmad_Shaad_Zaki_Resume.pdf" download="Ahmad_Shaad_Zaki_Resume.pdf" class="btn btn-primary hide-mobile">
+          <i class="fa-solid fa-file-arrow-down"></i> Resume
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left Hero Column -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Open to Relocation Anywhere in India</span>
+          </div>
+
+          <h1 class="hero-name">
+            Building Secure <br>
+            <span class="gradient-text">Directory & IAM Systems</span>
+          </h1>
+
+          <p class="hero-role mono-font">
+            <i class="fa-solid fa-shield-cat" style="color: var(--accent-primary);"></i> System Administrator & IAM Specialist
+          </p>
+
+          <p class="hero-desc">
+            B.Tech (CSE) graduate with extensive hands-on lab experience in <strong>Windows Server 2022, Active Directory Domain Services, PowerShell Automation</strong>, and networking fundamentals. Passionate about <strong>Identity & Access Management (IAM), RBAC governance, JML lifecycles, and Least Privilege security policies</strong>. Preparing for the Microsoft <strong>SC-900 certification</strong>.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="Ahmad_Shaad_Zaki_Resume.pdf" download="Ahmad_Shaad_Zaki_Resume.pdf" class="btn btn-primary">
+              <i class="fa-solid fa-download"></i> Download Resume (PDF)
+            </a>
+            
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-paper-plane"></i> Direct Contact
+            </a>
+
+            <button class="btn btn-outline" data-modal-open="themeModal">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Select Theme
+            </button>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Aligarh, Uttar Pradesh</span>
+            </div>
+            <div class="meta-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>B.Tech CSE (AKTU 2025)</span>
+            </div>
+            <div class="meta-item">
+              <i class="fa-solid fa-certificate"></i>
+              <span>Preparing SC-900</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Column: Profile Photo Card -->
+        <div class="hero-profile-side">
+          <div class="profile-card" id="about">
+            <div class="avatar-wrapper" id="heroAvatarWrapper" title="Click to expand photo">
+              <div class="avatar-ring"></div>
+              <img src="My photo.jpeg" alt="Ahmad Shaad Zaki Profile Photo" class="avatar-img">
+              <div class="avatar-expand-badge">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </div>
+
+            <h2 class="profile-name">Ahmad Shaad Zaki</h2>
+            <p class="profile-tag mono-font">&lt; SysAdmin / IAM Specialist &gt;</p>
+
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+              Dedicated IT professional focused on Active Directory administration, privilege management, and multi-OS infrastructure.
+            </p>
+
+            <div class="profile-stats">
+              <div>
+                <div class="stat-number">2026</div>
+                <div class="stat-label">Lab Active</div>
+              </div>
+              <div>
+                <div class="stat-number">SC-900</div>
+                <div class="stat-label">In Progress</div>
+              </div>
+              <div>
+                <div class="stat-number">7.1</div>
+                <div class="stat-label">AKTU CGPA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Security Shield Feature Banner -->
+      <div class="security-banner">
+        <div class="security-banner-info">
+          <div class="security-icon-circle">
+            <i class="fa-solid fa-user-lock"></i>
+          </div>
+          <div>
+            <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-main);">Fully Secured & Privacy Protected</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted);">This website features XSS input sanitization, anti-bot honeypot defenses, and obfuscated contact identifiers.</p>
+          </div>
+        </div>
+        <button class="btn btn-outline" data-modal-open="securityModal">
+          <i class="fa-solid fa-shield"></i> Security Audit Log
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SKILLS MATRIX SECTION
+       ========================================== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-microchip"></i> Technical Competencies</span>
+        <h2 class="section-title">Core Skills & Expertise</h2>
+        <p class="section-subtitle">Categorized breakdown of technical proficiencies, directory tools, identity frameworks, and server administration skills.</p>
+      </div>
+
+      <div class="skills-filter">
+        <button class="filter-btn active" data-filter="all">All Skills</button>
+        <button class="filter-btn" data-filter="directory">Active Directory</button>
+        <button class="filter-btn" data-filter="iam">IAM & Governance</button>
+        <button class="filter-btn" data-filter="scripting">PowerShell Scripting</button>
+        <button class="filter-btn" data-filter="os">Operating Systems</button>
+        <button class="filter-btn" data-filter="networking">Networking</button>
+        <button class="filter-btn" data-filter="itsm">ITSM & Virtualization</button>
+      </div>
+
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       HANDS-ON PROJECTS & VIRTUAL LABS
+       ========================================== -->
+  <section id="projects" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-flask-vial"></i> Virtual Environment</span>
+        <h2 class="section-title">Hands-On Labs & Projects</h2>
+        <p class="section-subtitle">Real-world multi-OS virtual lab infrastructure built to practice Windows Server administration, PowerShell automation, and IAM governance.</p>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       EXPERIENCE & EDUCATION TIMELINE
+       ========================================== -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Experience & Education</span>
+        <h2 class="section-title">Career & Academic Journey</h2>
+        <p class="section-subtitle">Professional experience, certifications, and educational credentials.</p>
+      </div>
+
+      <div class="dual-grid">
+        
+        <!-- Work Experience Timeline -->
+        <div>
+          <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.75rem;">
+            <i class="fa-solid fa-user-tie" style="color: var(--accent-primary);"></i> Professional Experience
+          </h3>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <span class="timeline-date">Jan 2022 – May 2022</span>
+              <h4 class="timeline-title">Sales Trainee (US IT Staffing / Bench Sales)</h4>
+              <p class="timeline-company"><i class="fa-solid fa-building"></i> SoftNice India Pvt Ltd</p>
+              
+              <ul class="project-highlights" style="margin-top: 0.75rem;">
+                <li><i class="fa-solid fa-chevron-right"></i> <span>Coordinated with US-based clients on candidate technical requirements and job specifications.</span></li>
+                <li><i class="fa-solid fa-chevron-right"></i> <span>Managed outbound communications, candidate sourcing, and screening for technical roles.</span></li>
+                <li><i class="fa-solid fa-chevron-right"></i> <span>Maintained CRM and candidate database records to ensure smooth placement workflow.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications & Education -->
+        <div>
+          <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.75rem;">
+            <i class="fa-solid fa-graduation-cap" style="color: var(--accent-primary);"></i> Certifications & Education
+          </h3>
+
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            
+            <!-- Certification Card -->
+            <div class="glass-card cert-card">
+              <div class="cert-badge-icon">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <div>
+                <span class="skill-level-badge" style="margin-bottom: 0.4rem; display: inline-block;">Target Certification</span>
+                <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.25rem;">Microsoft SC-900</h4>
+                <p style="font-size: 0.875rem; color: var(--accent-primary); font-weight: 600;">Security, Compliance, and Identity Fundamentals (In Progress)</p>
+                <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 0.5rem;">Mastering Microsoft Security principles, Azure AD/Entra ID, zero-trust concepts, and identity governance.</p>
+              </div>
+            </div>
+
+            <!-- B.Tech Card -->
+            <div class="glass-card cert-card">
+              <div class="cert-badge-icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div>
+                <span class="tag mono-font" style="margin-bottom: 0.4rem; display: inline-block;">Graduated 2025</span>
+                <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.25rem;">Bachelor of Technology (B.Tech) - CSE</h4>
+                <p style="font-size: 0.875rem; color: var(--text-muted);">Dr. A.P.J. Abdul Kalam Technical University (AKTU)</p>
+                <p style="font-size: 0.9rem; font-weight: 700; color: var(--accent-primary); margin-top: 0.25rem;">CGPA: 7.1</p>
+              </div>
+            </div>
+
+            <!-- Diploma Card -->
+            <div class="glass-card cert-card">
+              <div class="cert-badge-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div>
+                <span class="tag mono-font" style="margin-bottom: 0.4rem; display: inline-block;">Graduated 2021</span>
+                <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.25rem;">Diploma - Computer Science & Engineering</h4>
+                <p style="font-size: 0.875rem; color: var(--text-muted);">Board of Technical Education Uttar Pradesh (UPBTE)</p>
+                <p style="font-size: 0.9rem; font-weight: 700; color: var(--accent-primary); margin-top: 0.25rem;">Score: 71%</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DIRECT CONTACT SECTION
+       ========================================== -->
+  <section id="contact" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-envelope"></i> Get In Touch</span>
+        <h2 class="section-title">Direct Contact Form</h2>
+        <p class="section-subtitle">Have a hiring opportunity or IT question? Send a message directly to my professional inbox.</p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Contact Info Side -->
+        <div>
+          <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">Contact Information</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            I am actively seeking entry-level <strong>System Administrator, IT Support Specialist, or IAM Analyst</strong> roles. Open to relocation anywhere in India.
+          </p>
+
+          <div class="contact-info-list">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <div class="contact-text-label">Email Inbox</div>
+                <div class="contact-text-value" id="protectedEmailDisplay">ahmadalig20@gmail.com</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <div class="contact-text-label">Phone / WhatsApp</div>
+                <div class="contact-text-value" id="protectedPhoneDisplay">+91 82187 71108</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <div class="contact-text-label">Current Location & Relocation</div>
+                <div class="contact-text-value" id="protectedLocationDisplay">Open to Relocation Anywhere in India</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div>
+                <div class="contact-text-label">LinkedIn Profile</div>
+                <a href="https://linkedin.com/in/ahmadshaadzaki" target="_blank" rel="noopener" class="contact-text-value">
+                  linkedin.com/in/ahmadshaadzaki <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.75rem;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 0.75rem; margin-top: 1.5rem;">
+            <button class="btn btn-outline" id="copyEmailBtn" style="flex: 1;">
+              <i class="fa-solid fa-copy"></i> Copy Email
+            </button>
+            <button class="btn btn-outline" id="directMailtoBtn" style="flex: 1;">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Mail App
+            </button>
+          </div>
+        </div>
+
+        <!-- Contact Form Side -->
+        <div class="glass-card">
+          <form id="contactForm" novalidate>
+            <!-- Anti-Spam Honeypot Trap (Hidden) -->
+            <input type="text" name="website_url_check" class="honeypot-trap" tabindex="-1" autocomplete="off">
+
+            <div class="form-group">
+              <label for="senderName" class="form-label">Your Name *</label>
+              <input type="text" id="senderName" class="form-control" placeholder="e.g. Sarah Jenkins (Technical Recruiter)" required>
+            </div>
+
+            <div class="form-group">
+              <label for="senderEmail" class="form-label">Your Email Address *</label>
+              <input type="email" id="senderEmail" class="form-control" placeholder="e.g. sarah.jenkins@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="senderSubject" class="form-label">Subject</label>
+              <input type="text" id="senderSubject" class="form-control" placeholder="e.g. Job Opportunity / Interview Invitation">
+            </div>
+
+            <div class="form-group">
+              <label for="senderMessage" class="form-label">Your Message *</label>
+              <textarea id="senderMessage" class="form-control" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" id="contactSubmitBtn" class="btn btn-primary" style="width: 100%; padding: 0.9rem;">
+              <i class="fa-solid fa-paper-plane"></i> Send Direct Message to Ahmad
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       MODALS
+       ========================================== -->
+  
+  <!-- 1. THEME SELECTOR MODAL -->
+  <div class="modal-overlay" id="themeModal">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      
+      <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+        <i class="fa-solid fa-palette" style="font-size: 1.5rem; color: var(--accent-primary);"></i>
+        <h3 style="font-size: 1.4rem; font-weight: 800;">Choose Visual Theme</h3>
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.9rem;">Select your preferred color theme below. Your choice will be saved automatically.</p>
+
+      <div class="theme-options-grid" id="themeOptionsGrid">
+        <!-- Rendered by js/main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. SECURITY AUDIT MODAL -->
+  <div class="modal-overlay" id="securityModal">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      
+      <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+        <i class="fa-solid fa-shield-halved" style="font-size: 1.5rem; color: var(--accent-primary);"></i>
+        <h3 style="font-size: 1.4rem; font-weight: 800;">Security & Privacy Compliance</h3>
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Overview of client-side security measures implemented to protect personal data and maintain web safety.</p>
+
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <div class="contact-item">
+          <i class="fa-solid fa-code" style="color: var(--accent-primary); font-size: 1.25rem;"></i>
+          <div>
+            <h4 style="font-size: 0.95rem; font-weight: 700;">XSS Input Sanitization</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">All user inputs are escaped and sanitized prior to parsing or state mutation.</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-user-ninja" style="color: var(--accent-primary); font-size: 1.25rem;"></i>
+          <div>
+            <h4 style="font-size: 0.95rem; font-weight: 700;">Anti-Spambot Honeypot Trap</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Automated web crawlers attempting form spam are silently trapped and neutralized.</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-lock" style="color: var(--accent-primary); font-size: 1.25rem;"></i>
+          <div>
+            <h4 style="font-size: 0.95rem; font-weight: 700;">Obfuscated Email & Phone rendering</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Personal contact details are assembled dynamically in memory to block scraping bots.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. PHOTO LIGHTBOX MODAL -->
+  <div class="modal-overlay" id="photoModal">
+    <div class="modal-box" style="max-width: 500px; text-align: center;">
+      <button class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      
+      <img src="My photo.jpeg" alt="Ahmad Shaad Zaki Full Photo" style="width: 100%; border-radius: 16px; margin-bottom: 1rem; border: 3px solid var(--border-highlight);">
+      <h3 style="font-size: 1.25rem; font-weight: 700;">Ahmad Shaad Zaki</h3>
+      <p style="color: var(--accent-primary); font-size: 0.9rem; font-weight: 600;">System Administrator & IAM Specialist</p>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer>
+    <div class="container footer-content">
+      <div class="brand-logo">
+        <div class="brand-icon">
+          <i class="fa-solid fa-terminal"></i>
+        </div>
+        <span>AHMAD SHAAD ZAKI</span>
+      </div>
+
+      <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 500px;">
+        B.Tech CSE Graduate | Windows Server 2022 & Active Directory Specialist | Preparing SC-900 Certification.
+      </p>
+
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/ahmadshaadzaki" target="_blank" rel="noopener" class="btn btn-icon-only" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:ahmadalig20@gmail.com" class="btn btn-icon-only" title="Direct Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="Ahmad_Shaad_Zaki_Resume.pdf" download class="btn btn-icon-only" title="Download Resume">
+          <i class="fa-solid fa-file-pdf"></i>
+        </a>
+      </div>
+
+      <p style="color: var(--text-dim); font-size: 0.8rem; margin-top: 1rem;">
+        &copy; 2026 Ahmad Shaad Zaki. All Rights Reserved. Fully Secured & Responsive Web Application.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/security.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
