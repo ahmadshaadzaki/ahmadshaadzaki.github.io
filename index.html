@@ -69,6 +69,10 @@
           <span id="currentThemeName" class="hide-mobile">Cyber Security Slate</span>
         </button>
 
+        <button class="btn btn-icon-only" data-modal-open="qrModal" title="Recruiter Quick Contact QR Code">
+          <i class="fa-solid fa-qrcode" style="color: var(--accent-primary);"></i>
+        </button>
+
         <button class="btn btn-icon-only" data-modal-open="securityModal" title="Security & Privacy Information">
           <i class="fa-solid fa-shield-halved" style="color: var(--accent-primary);"></i>
         </button>
@@ -511,6 +515,31 @@
     </div>
   </div>
 
+  <!-- 4. RECRUITER QUICK CONTACT QR CODE MODAL -->
+  <div class="modal-overlay" id="qrModal">
+    <div class="modal-box" style="max-width: 480px; text-align: center;">
+      <button class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      
+      <div style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+        <i class="fa-solid fa-qrcode" style="font-size: 1.5rem; color: var(--accent-primary);"></i>
+        <h3 style="font-size: 1.35rem; font-weight: 800;">Recruiter Quick Contact QR</h3>
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1.25rem;">Scan with your smartphone camera to instantly view and save Ahmad's vCard & Portfolio details!</p>
+
+      <div style="background: #ffffff; padding: 1.25rem; border-radius: 16px; display: inline-block; box-shadow: var(--shadow-lg); border: 2px solid var(--accent-primary);">
+        <img id="qrCodeImg" src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fahmadshaadzaki.github.io" alt="Ahmad Shaad Zaki vCard Portfolio QR Code" style="width: 200px; height: 200px; display: block; margin: 0 auto;">
+      </div>
+
+      <p style="font-size: 0.85rem; font-weight: 700; color: var(--accent-primary); margin-top: 1rem;">ahmadshaadzaki.github.io</p>
+      <p style="font-size: 0.8rem; color: var(--text-muted);">Email: ahmadalig20@gmail.com | Phone: +91 82187 71108</p>
+    </div>
+  </div>
+
+  <!-- Scroll to Top Floating Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" title="Back to top" aria-label="Scroll back to top of page">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
   <!-- ==========================================
        FOOTER
        ========================================== -->
@@ -546,9 +575,9 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="js/security.js?v=2.0.0"></script>
-  <script src="js/data.js?v=2.0.0"></script>
-  <script src="js/contact.js?v=2.0.0"></script>
-  <script src="js/main.js?v=2.0.0"></script>
+  <script src="js/security.js?v=3.0.0"></script>
+  <script src="js/data.js?v=3.0.0"></script>
+  <script src="js/contact.js?v=3.0.0"></script>
+  <script src="js/main.js?v=3.0.0"></script>
 </body>
 </html>

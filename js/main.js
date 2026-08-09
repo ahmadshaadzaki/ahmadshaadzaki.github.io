@@ -10,7 +10,51 @@ document.addEventListener('DOMContentLoaded', () => {
   renderProtectedDetails();
   initNavigation();
   initModals();
+  initScrollEffects();
 });
+
+/* ==========================================
+   SCROLL EFFECTS & SCROLL TO TOP
+   ========================================== */
+function initScrollEffects() {
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+  if (scrollTopBtn) {
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+
+  // Scroll Reveal Animations
+  const observerOptions = {
+    threshold: 0.15,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('section, .glass-card, .timeline-item').forEach(el => {
+    el.classList.add('reveal-on-scroll');
+    observer.observe(el);
+  });
+}
 
 /* ==========================================
    1. THEME ENGINE & SELECTION MODAL
