@@ -109,36 +109,6 @@ const PORTFOLIO_DATA = {
         output: "SECURITY AUDIT: User 'jdoe' disabled. Token revoked. Group memberships cleared."
       },
       tags: ["IAM", "RBAC", "JML Lifecycle", "Least Privilege", "SC-900 Concepts"]
-    },
-    {
-      id: "custom-shop-aligarh",
-      title: "Custom Shop Aligarh — E-Commerce Web Application",
-      timeline: "2026",
-      category: "Web Application",
-      status: "Live Production Repo",
-      githubUrl: "https://github.com/ahmadshaadzaki/custom-shop-aligarh",
-      desc: "A high-performance, dark-luxury responsive web application for Custom Shop Aligarh specializing in men's branded surplus apparel and perfumes.",
-      highlights: [
-        "Real-Time Store Status Calculator computing opening hours automatically based on Indian Standard Time (IST).",
-        "Interactive Stock Collection Explorer with category filters, instant keyword search, and product quick-view modal dialogs.",
-        "Dark-Luxury Obsidian aesthetic with gold accents, glassmorphism UI components, and XSS input sanitization."
-      ],
-      tags: ["HTML5", "CSS3", "JavaScript ES6+", "JSON-LD Schema", "Glassmorphism"]
-    },
-    {
-      id: "muzammil-manzil-masjid",
-      title: "Muzammil Manzil Masjid — Full-Stack Community Portal",
-      timeline: "2026",
-      category: "Full-Stack Web App",
-      status: "Live Production Repo",
-      githubUrl: "https://github.com/ahmadshaadzaki/Muzammil-Manzil-Masjid-Website",
-      desc: "An informative community web portal and digital guide providing daily prayer time calculations, Jummah schedules, Qibla direction tool, and historical heritage details.",
-      highlights: [
-        "Real-time prayer schedule algorithms computed for Aligarh region with Qibla compass and directions.",
-        "Built with React 19, TypeScript, Vite, Tailwind CSS v4, and Lucide React icons.",
-        "Backend & API services built with Express.js and Cloudflare Workers (`wrangler`) serverless deployment."
-      ],
-      tags: ["React 19", "TypeScript", "Vite", "Tailwind CSS v4", "Express.js", "Cloudflare Workers"]
     }
   ],
 
