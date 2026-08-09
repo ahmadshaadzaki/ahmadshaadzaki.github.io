@@ -12,6 +12,7 @@ const PORTFOLIO_DATA = {
     phone: "+91 82187 71108",
     linkedin: "https://linkedin.com/in/ahmadshaadzaki",
     github: "https://github.com/ahmadshaadzaki",
+    instagram: "https://instagram.com/iahmadshaad",
     web3FormsKey: "YOUR_WEB3FORMS_ACCESS_KEY", // Replace with free key from https://web3forms.com
     resumePdf: "Ahmad_Shaad_Zaki_Resume.pdf",
     photoImg: "My photo.jpeg",
