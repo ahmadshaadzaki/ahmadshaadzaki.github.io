@@ -22,10 +22,13 @@
     // 4. Render Core Skills & Technical Pillars
     renderSkillsGrid(data.skills || []);
 
-    // 5. Render AWS CloudOps Execution Plan
+    // 5. Render Target Entry-Level Roles
+    renderTargetRoles(data.targetRoles || []);
+
+    // 6. Render AWS CloudOps Execution Plan
     renderExecutionPlan(data.executionPlan || []);
 
-    // 6. Render Work Experience Timeline
+    // 7. Render Work Experience Timeline
     renderExperience(data.experience || []);
 
     // 6. Setup Navigation & Scroll Spy
@@ -116,6 +119,41 @@
           </div>
           
           <p style="font-size: 0.9rem; color: var(--text-muted);">${SecurityModule.escapeHTML(skill.desc)}</p>
+
+          <div class="tag-cloud">
+            ${tagsHtml}
+          </div>
+        </div>
+      `;
+    });
+
+    grid.innerHTML = html;
+  }
+
+  /* ------------------------------------------
+     ENTRY-LEVEL TARGET ROLES RENDERER
+     ------------------------------------------ */
+  function renderTargetRoles(targetRoles) {
+    const grid = document.getElementById('targetRolesGrid');
+    if (!grid) return;
+
+    let html = '';
+    targetRoles.forEach(role => {
+      const tagsHtml = (role.tags || []).map(t => `<span class="tag-chip">${SecurityModule.escapeHTML(t)}</span>`).join('');
+
+      html += `
+        <div class="card-glass skill-card">
+          <div class="skill-card-header">
+            <div class="skill-icon">
+              <i class="${SecurityModule.escapeHTML(role.icon)}"></i>
+            </div>
+            <div>
+              <h3 style="font-size: 1.1rem; font-weight: 800;">${SecurityModule.escapeHTML(role.title)}</h3>
+            </div>
+            <span class="skill-level-badge">${SecurityModule.escapeHTML(role.badge)}</span>
+          </div>
+          
+          <p style="font-size: 0.9rem; color: var(--text-muted);">${SecurityModule.escapeHTML(role.desc)}</p>
 
           <div class="tag-cloud">
             ${tagsHtml}

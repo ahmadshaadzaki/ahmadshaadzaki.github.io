@@ -100,6 +100,38 @@ const PORTFOLIO_DATA = {
       tags: ["Amazon CloudWatch", "AWS Systems Manager (SSM)", "AWS CloudTrail", "EC2 Auto Scaling", "AWS CloudFormation", "FinOps Cost Optimization"]
     }
   ],
+
+  targetRoles: [
+    {
+      title: "Cloud Support Associate / Engineer",
+      badge: "AWS Technical Support",
+      icon: "fa-solid fa-headset",
+      desc: "Providing technical issue resolution, EC2/S3 troubleshooting, managing IAM user permissions, and reacting to CloudWatch metrics.",
+      tags: ["AWS Support", "CloudWatch Alarms", "IAM Access", "EC2/S3", "Ticket Resolution"]
+    },
+    {
+      title: "Associate Cloud Operations Specialist",
+      badge: "CloudOps Track",
+      icon: "fa-solid fa-chart-line",
+      desc: "Monitoring system health, tracking Auto Scaling events, executing automated OS patching via SSM Patch Manager, and operational triage.",
+      tags: ["CloudOps", "AWS Systems Manager", "Auto Scaling", "System Patching", "CloudTrail Logs"]
+    },
+    {
+      title: "Junior Cloud Systems Administrator",
+      badge: "Systems Admin Track",
+      icon: "fa-solid fa-server",
+      desc: "Managing Linux server environments, configuring VPC subnets & Security Groups, Route 53 DNS routing, and CLI task automation.",
+      tags: ["Linux Shell", "Amazon VPC", "Route 53", "Security Groups", "Bash CLI"]
+    },
+    {
+      title: "Cloud Operations & Compliance Analyst",
+      badge: "Governance & Ops",
+      icon: "fa-solid fa-shield-halved",
+      desc: "Auditing CloudTrail API call logs, monitoring AWS resource compliance via AWS Config, backup execution, and FinOps cost tracking.",
+      tags: ["FinOps", "AWS Config", "CloudTrail Logs", "Resource Audit", "Compliance"]
+    }
+  ],
+
   projects: [],
 
   experience: [
