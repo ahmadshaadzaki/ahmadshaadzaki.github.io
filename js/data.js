@@ -5,9 +5,8 @@
 const PORTFOLIO_DATA = {
   profile: {
     name: "Ahmad Shaad Zaki",
-    title: "System Administrator & IAM Specialist",
+    title: "Computer Science & Engineering Graduate",
     location: "Aligarh, Uttar Pradesh, India",
-    relocation: "Open to Relocation Anywhere in India",
     email: "ahmadalig20@gmail.com",
     phone: "+91 82187 71108",
     linkedin: "https://linkedin.com/in/ahmadshaadzaki",
@@ -18,99 +17,91 @@ const PORTFOLIO_DATA = {
     photoImg: "My photo.jpeg",
     degreeImg: "BTech_Degree_DigiLocker.png",
     status: "B.Tech CSE Graduate — First Division (AKTU 2025)",
-    summary: "B.Tech (CSE) graduate from Dr. A.P.J. Abdul Kalam Technical University with First Division honors. Possesses hands-on lab experience in Windows Server 2022, Active Directory, PowerShell automation scripting, networking, and system administration."
+    summary: "B.Tech (CSE) graduate from Dr. A.P.J. Abdul Kalam Technical University with First Division honors. Possesses hands-on experience in Windows Server 2022, Active Directory, PowerShell automation scripting, networking fundamentals, and multi-OS virtual environments."
   },
 
   skills: [
     {
-      category: "directory",
-      name: "Active Directory Domain Services (AD DS)",
-      icon: "fa-solid font-awesome fa-sitemap",
-      level: "Advanced Hands-On",
-      desc: "OU structure design, GPO deployment, User/Computer object management, Group-Based Access Control (GBAC), and domain join procedures.",
-      tags: ["AD DS", "GPO", "OUs", "GBAC", "Windows Server 2022"]
+      category: "os",
+      name: "Operating Systems & Administration",
+      icon: "fa-solid fa-server",
+      level: "Daily Hands-On",
+      desc: "Windows 10/11, Windows Server 2022, Ubuntu Linux shell fundamentals, SSH configuration, package management (apt), CentOS & Kali Linux basics.",
+      tags: ["Windows Server 2022", "Ubuntu", "CentOS", "Kali Linux", "SSH", "Bash"]
     },
     {
-      category: "iam",
-      name: "Identity & Access Management (IAM)",
-      icon: "fa-solid fa-user-shield",
-      level: "Foundational & Lab Experienced",
-      desc: "Role-Based Access Control (RBAC), Joiner-Mover-Leaver (JML) lifecycle, Principle of Least Privilege, SSO & MFA (conceptual).",
-      tags: ["RBAC", "JML Lifecycle", "Least Privilege", "MFA", "AuthN/AuthZ"]
+      category: "directory",
+      name: "Active Directory Domain Services (AD DS)",
+      icon: "fa-solid fa-sitemap",
+      level: "Advanced Hands-On",
+      desc: "OU structure design, Group Policy Objects (GPOs), User/Computer object management, Group-Based Access Control (GBAC), and domain join procedures.",
+      tags: ["AD DS", "GPO", "OUs", "GBAC", "Windows Server 2022"]
     },
     {
       category: "scripting",
       name: "PowerShell Scripting & Automation",
       icon: "fa-solid fa-code",
-      level: "Active Learning & Applied",
-      desc: "Automating AD user provisioning, bulk user creation scripts, group membership assignments, and repetitive administrative task automation.",
+      level: "Applied Hands-On",
+      desc: "Automating user provisioning, bulk account creation scripts, group membership management, and administrative task automation.",
       tags: ["PowerShell", "AD Cmdlets", "Automation", "CLI Administration"]
-    },
-    {
-      category: "os",
-      name: "Operating Systems & Linux Admin",
-      icon: "fa-solid fa-server",
-      level: "Daily Hands-On",
-      desc: "Windows Server 2022, Windows 10/11, Ubuntu Linux shell fundamentals, SSH configuration, package management (apt), CentOS & Kali Linux basics.",
-      tags: ["Windows Server 2022", "Ubuntu", "CentOS", "Kali Linux", "SSH", "Bash"]
     },
     {
       category: "networking",
       name: "Networking Fundamentals",
       icon: "fa-solid fa-network-wired",
       level: "Core Competency",
-      desc: "TCP/IP protocol suite, DNS record resolution, DHCP IP allocation, IPv4 Subnetting, and OSI Model 7-layer architecture troubleshooting.",
+      desc: "TCP/IP protocol suite, DNS record resolution, DHCP IP allocation, IPv4 Subnetting, and OSI Model 7-layer architecture.",
       tags: ["TCP/IP", "DNS", "DHCP", "Subnetting", "OSI Model"]
     },
     {
-      category: "itsm",
-      name: "ITSM, Ticketing & Virtualization",
+      category: "tools",
+      name: "Virtualization, ITSM & Tools",
       icon: "fa-solid fa-layer-group",
       level: "Working Knowledge",
-      desc: "ServiceNow ticketing workflows, ITIL Foundation concepts, VMware Workstation, VirtualBox multi-OS setup, Google Workspace administration.",
-      tags: ["ServiceNow", "ITIL", "VMware", "VirtualBox", "Google Workspace"]
+      desc: "VMware Workstation, Oracle VirtualBox multi-OS setup, ServiceNow ticketing workflows, ITIL Foundation concepts, Google Workspace, Git/GitHub.",
+      tags: ["VMware", "VirtualBox", "ServiceNow", "ITIL", "Google Workspace", "Git/GitHub"]
     }
   ],
 
   projects: [
     {
       id: "home-lab-infra",
-      title: "Home Lab Infrastructure — Multi-OS Virtual Environment",
-      timeline: "Ongoing (2026)",
-      category: "SysAdmin & Virtualization",
+      title: "Multi-OS Virtual Infrastructure & Domain Lab",
+      timeline: "2026",
+      category: "Systems & Virtualization",
       status: "Active Virtual Lab",
       desc: "Architected and maintain a multi-OS virtual lab using VMware Workstation and Oracle VirtualBox to simulate an enterprise domain infrastructure.",
       highlights: [
         "Deployed Windows Server 2022 and configured Active Directory Domain Services from scratch.",
         "Created Organizational Units (OUs) for department-wise hierarchy and configured granular Group Policy Objects (GPOs).",
-        "Configured security groups and managed access control permissions following Least Privilege principle.",
+        "Configured security groups and managed access control permissions following Least Privilege principles.",
         "Integrated Linux (Ubuntu, CentOS, Kali Linux) VMs into the network for cross-platform system testing."
       ],
       terminalDemo: {
-        title: "ActiveDirectory-Provisioning.ps1",
+        title: "User-Provisioning-Automation.ps1",
         command: "Import-Csv .\\NewUsers.csv | ForEach-Object { New-ADUser -Name $_.Name -UserPrincipalName $_.UPN -Path $_.OU -Enabled $true }",
         output: "SUCCESS: Provisioned 25 Domain Users in OU=Engineering,DC=lab,DC=local with Group Policies Enforced."
       },
       tags: ["Windows Server 2022", "Active Directory", "VMware", "PowerShell", "Group Policy"]
     },
     {
-      id: "iam-rbac-lab",
-      title: "IAM RBAC & JML User Lifecycle Governance Lab",
+      id: "access-control-lab",
+      title: "Directory User Provisioning & Group Policy Automation Lab",
       timeline: "2026",
-      category: "Security & IAM",
+      category: "Automation & Security",
       status: "Lab Verified",
-      desc: "Designed access control governance policies to simulate Joiner-Mover-Leaver (JML) user transitions within an enterprise directory.",
+      desc: "Designed access control management policies to simulate structured user lifecycle transitions within an enterprise directory.",
       highlights: [
-        "Implemented Role-Based Access Control (RBAC) mapping department roles to specific AD security groups.",
-        "Scripted onboarding automated emails and temporary credentials creation with forced password reset at next logon.",
-        "Simulated offboarding procedures (Leaver) ensuring instant access revocation and computer account disablement."
+        "Implemented Group-Based Access Control mapping department roles to specific security groups.",
+        "Scripted user onboarding credentials creation with forced password reset policies.",
+        "Simulated user offboarding procedures ensuring instant access revocation and computer account disablement."
       ],
       terminalDemo: {
-        title: "Revoke-LeaverAccess.ps1",
+        title: "User-Access-Management.ps1",
         command: "Disable-ADAccount -Identity 'jdoe' | Revoke-ADGroupMembership -All",
-        output: "SECURITY AUDIT: User 'jdoe' disabled. Token revoked. Group memberships cleared."
+        output: "AUDIT: User 'jdoe' disabled. Group memberships cleared."
       },
-      tags: ["IAM", "RBAC", "JML Lifecycle", "Least Privilege", "SC-900 Concepts"]
+      tags: ["Active Directory", "PowerShell", "Access Control", "Group Policy", "Automation"]
     }
   ],
 
@@ -123,18 +114,9 @@ const PORTFOLIO_DATA = {
       summary: "Client communication, candidate sourcing, CRM management, and technical talent placement coordination.",
       points: [
         "Coordinated with US-based clients on technical candidate requirements and job descriptions.",
-        "Managed outbound communication, candidate sourcing, and screening for IT system roles.",
+        "Managed outbound communication, candidate sourcing, and screening for technical roles.",
         "Maintained CRM/database records and supported end-to-end placement workflow coordination."
       ]
-    }
-  ],
-
-  certifications: [
-    {
-      name: "Microsoft SC-900: Security, Compliance, and Identity Fundamentals",
-      issuer: "Microsoft",
-      status: "In Progress",
-      desc: "Focusing on Microsoft Security concepts, Azure AD / Entra ID identity services, threat protection, compliance, and zero trust architecture."
     }
   ],
 
@@ -143,13 +125,13 @@ const PORTFOLIO_DATA = {
       degree: "Bachelor of Technology (B.Tech) - Computer Science & Engineering",
       institution: "Dr. A.P.J. Abdul Kalam Technical University (AKTU)",
       year: "Graduated 2025",
-      score: "CGPA: 7.1"
+      score: "First Division (CGPA: 7.1)"
     },
     {
       degree: "Diploma - Computer Science & Engineering",
       institution: "Board of Technical Education Uttar Pradesh (UPBTE)",
       year: "Graduated 2021",
-      score: "Score: 71%"
+      score: "First Division (Score: 71%)"
     }
   ],
 
@@ -157,7 +139,7 @@ const PORTFOLIO_DATA = {
     {
       id: "cyber",
       name: "Cyber Security Slate",
-      tagline: "Slate & Neon Azure (Recommended for SysAdmin)",
+      tagline: "Slate & Neon Azure Theme",
       accent: "#00f2fe",
       bg: "#0a0e17"
     },

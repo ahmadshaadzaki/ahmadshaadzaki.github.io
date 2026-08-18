@@ -1,11 +1,11 @@
-# Ahmad Shaad Zaki - Professional Portfolio Website 🛡️
+# Ahmad Shaad Zaki - Professional Portfolio Website 🎓
 
 [![Live Website](https://img.shields.io/badge/Live-ahmadshaadzaki.github.io-00f2fe?style=for-the-badge&logo=githubpages&logoColor=black)](https://ahmadshaadzaki.github.io/)
-[![Role](https://img.shields.io/badge/Role-System%20Admin%20%26%20IAM%20Specialist-blue?style=for-the-badge&logo=windows)](https://ahmadshaadzaki.github.io/)
-[![Certification](https://img.shields.io/badge/Microsoft-SC--900%20(In%20Progress)-10b981?style=for-the-badge&logo=microsoft)](https://ahmadshaadzaki.github.io/)
+[![Degree](https://img.shields.io/badge/Degree-B.Tech%20CSE%20(First%20Division)-blue?style=for-the-badge&logo=graduationcap)](https://ahmadshaadzaki.github.io/)
+[![DigiLocker Verified](https://img.shields.io/badge/DigiLocker-Verified%20Certificate-10b981?style=for-the-badge&logo=checkmarks)](https://ahmadshaadzaki.github.io/)
 [![Security Verified](https://img.shields.io/badge/Security-XSS%20%26%20Honeypot%20Shield-purple?style=for-the-badge&logo=shield)](https://ahmadshaadzaki.github.io/)
 
-Welcome to the official repository for **Ahmad Shaad Zaki**'s professional personal portfolio website. Built specifically for recruiters, hiring managers, and IT leadership, this web application highlights expertise in **System Administration, Active Directory Domain Services (AD DS), Identity & Access Management (IAM), PowerShell Automation, Networking, and Multi-OS Virtual Infrastructure**.
+Welcome to the official repository for **Ahmad Shaad Zaki**'s professional personal portfolio website. Built to showcase academic credentials, technical skills, hands-on labs, and professional experience, this web application highlights expertise in **Computer Science & Engineering, Operating Systems, Active Directory Domain Services, PowerShell Automation Scripting, Networking, and Multi-OS Virtual Infrastructure**.
 
 ---
 
@@ -18,7 +18,11 @@ Welcome to the official repository for **Ahmad Shaad Zaki**'s professional perso
 
 ## 🌟 Highlights & Key Features
 
-### 1. 🛡️ Multi-Theme Engine (Default: Cyber Security Slate)
+### 1. 📜 DigiLocker Verified B.Tech Degree Certificate Display
+- Interactive, high-resolution framed display card featuring the official **DigiLocker Verified B.Tech Degree Certificate** (AKTU 2025, First Division).
+- Includes full-screen image lightbox modal view for credentials verification.
+
+### 2. 🛡️ Multi-Theme Engine (Default: Cyber Security Slate)
 - **5 Curated Color Themes**:
   1. **Cyber Security Slate** *(Default)*: Slate background `#0a0e17`, neon azure `#00f2fe` terminal aesthetic.
   2. **Obsidian Violet**: Glassmorphic deep purple & glowing violet highlights.
@@ -27,23 +31,14 @@ Welcome to the official repository for **Ahmad Shaad Zaki**'s professional perso
   5. **Pristine Light**: High-contrast, clean minimalist light mode.
 - Interactive **Select Theme** modal with real-time preview and browser `localStorage` persistence.
 
-### 2. 🔒 Comprehensive Client Security & Privacy Protection
+### 3. 🔒 Comprehensive Client Security & Privacy Protection
 - **XSS Sanitization**: Input sanitization via `SecurityUtils.sanitizeInput()` escaping special characters.
 - **Anti-Spambot Honeypot**: Hidden decoy trap field neutralizing automated web scraping bots.
 - **Obfuscated Contact Identifiers**: Dynamic memory assembly of email (`ahmadalig20@gmail.com`) and phone number (`+91 82187 71108`) to prevent crawler scraping.
-- **Client Rate Limiting**: Restricts contact form submissions to prevent spam floods.
 
-### 3. 🖥️ Interactive Virtual Lab & Terminal Console Showcase
-- Detailed architecture highlights of the **Multi-OS Virtual Environment** running Windows Server 2022, Ubuntu Linux, CentOS, and Kali Linux.
-- Interactive terminal console code boxes demonstrating PowerShell Active Directory user provisioning scripts.
-
-### 4. 📄 Resume & Profile Integration
-- Direct 1-click download button for official PDF resume (`Ahmad_Shaad_Zaki_Resume.pdf`).
-- Interactive profile card featuring `My photo.jpeg` with glowing status ring and full-screen image lightbox modal view.
-
-### 5. ✉️ Direct Contact Form
-- Direct email dispatch to `ahmadalig20@gmail.com` via Web3Forms API.
-- Automatic mailto fallback & 1-click **Copy Email to Clipboard** action button.
+### 4. 🖥️ Virtual Lab & Terminal Console Showcase
+- Multi-OS Virtual Environment running Windows Server 2022, Ubuntu Linux, CentOS, and Kali Linux.
+- Interactive terminal console code boxes demonstrating PowerShell user provisioning automation.
 
 ---
 
@@ -68,6 +63,7 @@ Welcome to the official repository for **Ahmad Shaad Zaki**'s professional perso
 │   ├── security.js              # XSS sanitization, anti-bot honeypot & obfuscation
 │   ├── contact.js               # Form handler, rate limiting & direct email dispatch
 │   └── main.js                  # Theme engine, modal controllers & navigation
+├── BTech_Degree_DigiLocker.png  # DigiLocker B.Tech Degree Certificate Image
 ├── Ahmad_Shaad_Zaki_Resume.pdf  # PDF Resume
 ├── My photo.jpeg                # Profile Photo
 └── README.md                    # Documentation
@@ -75,29 +71,13 @@ Welcome to the official repository for **Ahmad Shaad Zaki**'s professional perso
 
 ---
 
-## ⚙️ Local Development Setup
-
-To run this repository locally:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ahmadshaadzaki/ahmadshaadzaki.github.io.git
-   cd ahmadshaadzaki.github.io
-   ```
-2. Start any static web server (e.g. Python HTTP server or Node `serve`):
-   ```bash
-   python -m http.server 8080
-   ```
-3. Open `http://localhost:8080` in your web browser.
-
----
-
 ## 👤 Contact & Profile
 
 - **Name**: Ahmad Shaad Zaki
-- **Role**: System Administrator & IAM Specialist
-- **Location**: Aligarh, Uttar Pradesh (Open to Relocation Anywhere in India)
+- **Degree**: Bachelor of Technology (B.Tech) - Computer Science & Engineering (AKTU, 2025 - First Division)
+- **Location**: Aligarh, Uttar Pradesh, India
 - **LinkedIn**: [linkedin.com/in/ahmadshaadzaki](https://linkedin.com/in/ahmadshaadzaki)
+- **Instagram**: [@iahmadshaad](https://instagram.com/iahmadshaad)
 - **Email**: `ahmadalig20@gmail.com`
 - **Phone**: `+91 82187 71108`
 
