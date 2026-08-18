@@ -16,8 +16,9 @@ const PORTFOLIO_DATA = {
     web3FormsKey: "YOUR_WEB3FORMS_ACCESS_KEY", // Replace with free key from https://web3forms.com
     resumePdf: "Ahmad_Shaad_Zaki_Resume.pdf",
     photoImg: "My photo.jpeg",
-    status: "Actively Seeking Entry-Level SysAdmin / IT Support / IAM Roles",
-    summary: "B.Tech (CSE) graduate with hands-on lab experience in Windows Server 2022, Active Directory, PowerShell scripting, and networking fundamentals. Specializing in Identity & Access Management (IAM), RBAC, JML Lifecycle, and Least Privilege principles. Preparing for Microsoft SC-900 certification."
+    degreeImg: "BTech_Degree_DigiLocker.png",
+    status: "B.Tech CSE Graduate — First Division (AKTU 2025)",
+    summary: "B.Tech (CSE) graduate from Dr. A.P.J. Abdul Kalam Technical University with First Division honors. Possesses hands-on lab experience in Windows Server 2022, Active Directory, PowerShell automation scripting, networking, and system administration."
   },
 
   skills: [
