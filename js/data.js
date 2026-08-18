@@ -18,7 +18,7 @@ const PORTFOLIO_DATA = {
     photoImg: "My photo.jpeg",
     degreeImg: "BTech_Degree_DigiLocker.png",
     status: "Targeting AWS Certified CloudOps Engineer – Associate Certification",
-    summary: "B.Tech (CSE) graduate from AKTU (First Division) specializing in the AWS Ops/Infra track. Focused on AWS Cloud Infrastructure Management, IAM Security Policies, CloudWatch Operations, Auto Scaling, Systems Manager, VPC Networking, and Cloud Governance — operational cloud execution without heavy software programming or complex math."
+    summary: "Computer Science & Engineering graduate specializing in AWS Cloud Infrastructure & Systems Operations. Focused on building resilient cloud environments, configuring secure VPC networks, managing AWS IAM governance, and leveraging CloudWatch observability and automation to drive system reliability, operational performance, and cloud security."
   },
 
   executionPlan: [
