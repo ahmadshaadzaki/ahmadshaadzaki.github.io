@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="aws">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Security & CSP Headers -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob: 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https: blob:;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  <!-- SEO Meta Tags -->
+  <title>Ahmad Shaad Zaki | B.Tech Computer Science & Engineering Graduate</title>
+  <meta name="description" content="Portfolio of Ahmad Shaad Zaki — B.Tech Computer Science & Engineering graduate with First Division honors from AKTU.">
+  <meta name="keywords" content="Ahmad Shaad Zaki, B.Tech CSE, Computer Science Engineering, Software Engineering, DigiLocker Degree">
+  <meta name="author" content="Ahmad Shaad Zaki">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Ambient Dynamic Glowing Background -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+  </div>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION BAR
+       ========================================== -->
+  <header class="header-nav" id="headerNav">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Ahmad Shaad Zaki Homepage">
+        <div class="brand-icon">
+          <i class="fa-solid fa-terminal"></i>
+        </div>
+        <span>AHMAD SHAAD ZAKI</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About & Degree</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#roadmap" class="nav-link">AWS CloudOps Roadmap</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-secondary btn-icon-only" id="themeModalBtn" title="Choose Visual Theme" aria-label="Open Theme Selector Modal">
+          <i class="fa-solid fa-palette"></i>
+        </button>
+
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content reveal-on-scroll">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span id="heroStatusText">Targeting AWS Certified CloudOps Engineer – Associate</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Ahmad Shaad Zaki</span>
+          </h1>
+          
+          <h2 class="hero-subtitle">
+            B.Tech CSE | AWS CloudOps & Infrastructure Track
+          </h2>
+
+          <p class="hero-description">
+            B.Tech (CSE) graduate specializing in AWS Cloud Operations, IAM Security, VPC Networking, CloudWatch Monitoring, Auto Scaling, and Infrastructure Governance — operational cloud execution focused on systems reliability without software development or heavy math.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane"></i> Get in Touch
+            </a>
+            <button class="btn btn-secondary" id="qrModalBtn">
+              <i class="fa-solid fa-qrcode"></i> Recruiter Quick QR
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-avatar-wrapper reveal-on-scroll">
+          <div class="hero-avatar-card" id="photoCardBtn" title="Click to view full photo">
+            <img src="My photo.jpeg" alt="Ahmad Shaad Zaki - B.Tech CSE Graduate">
+            <div class="hero-avatar-overlay">
+              <div class="hero-avatar-info">
+                <h4>Ahmad Shaad Zaki</h4>
+                <p>AKTU B.Tech CSE (First Division)</p>
+              </div>
+              <i class="fa-solid fa-expand" style="color: #ffffff;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ABOUT & DIGILOCKER DEGREE CERTIFICATE SECTION
+       ========================================== -->
+  <section id="about" class="reveal-on-scroll">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Academic Verification</span>
+        <h2 class="section-title">Education & Credentials</h2>
+        <p class="section-subtitle">Verified B.Tech Computer Science & Engineering degree and formal academic foundation.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- DigiLocker B.Tech Degree Certificate Card -->
+        <div class="card-glass degree-card">
+          <div>
+            <div class="digilocker-badge">
+              <i class="fa-solid fa-circle-check"></i> Digitally Verified via DigiLocker
+            </div>
+            
+            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.4rem;">
+              Bachelor of Technology (B.Tech) — CSE
+            </h3>
+            
+            <p style="color: var(--text-muted); font-size: 0.9rem;">
+              Dr. A.P.J. Abdul Kalam Technical University (AKTU), Uttar Pradesh
+            </p>
+          </div>
+
+          <div class="degree-img-preview" id="degreeCardBtn" title="Click to view full DigiLocker Certificate">
+            <img src="BTech_Degree_DigiLocker.png" alt="Ahmad Shaad Zaki DigiLocker B.Tech Degree Certificate">
+            <div class="degree-img-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i> View DigiLocker Certificate
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; pt-2;">
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--accent-primary);">Graduated 2025 | First Division (CGPA: 7.1)</span>
+            <button class="btn btn-secondary btn-icon-only" id="degreeModalTrigger" aria-label="Open Degree Lightbox">
+              <i class="fa-solid fa-expand"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Academic History Cards -->
+        <div class="card-glass" style="display: flex; flex-direction: column; justify-content: center; gap: 1.5rem;">
+          <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.5rem;">
+            Academic Qualification Highlights
+          </h3>
+
+          <div class="edu-item">
+            <h4 class="edu-degree">Bachelor of Technology (B.Tech) - Computer Science & Engineering</h4>
+            <div class="edu-school">Dr. A.P.J. Abdul Kalam Technical University (AKTU)</div>
+            <div class="edu-meta">
+              <span><i class="fa-regular fa-calendar"></i> 2021 – 2025</span>
+              <span><i class="fa-solid fa-award"></i> First Division (CGPA: 7.1)</span>
+            </div>
+          </div>
+
+          <div class="edu-item">
+            <h4 class="edu-degree">Diploma in Computer Science & Engineering</h4>
+            <div class="edu-school">Board of Technical Education Uttar Pradesh (UPBTE)</div>
+            <div class="edu-meta">
+              <span><i class="fa-regular fa-calendar"></i> 2018 – 2021</span>
+              <span><i class="fa-solid fa-award"></i> First Division (71%)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SKILLS & TECHNICAL PILLARS SECTION
+       ========================================== -->
+  <section id="skills" class="reveal-on-scroll">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Technical Pillars</span>
+        <h2 class="section-title">CloudOps Skill Competencies</h2>
+        <p class="section-subtitle">Linux & Networking Foundations, Core AWS Services, and SysOps-Specific Operational Depth.</p>
+      </div>
+
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       AWS CLOUDOPS EXECUTION PLAN & ROADMAP
+       ========================================== -->
+  <section id="roadmap" class="reveal-on-scroll">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">AWS Ops / Infra Track</span>
+        <h2 class="section-title">AWS CloudOps Execution Plan</h2>
+        <p class="section-subtitle">Targeting AWS Certified CloudOps Engineer – Associate | Zero Dev & Operational Infrastructure Roadmap.</p>
+      </div>
+
+      <div class="skills-grid" id="executionPlanGrid">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       WORK EXPERIENCE SECTION
+       ========================================== -->
+  <section id="experience" class="reveal-on-scroll">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Industry Exposure</span>
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">Client communication, technical talent sourcing, and IT coordination experience.</p>
+      </div>
+
+      <div class="timeline" id="experienceTimeline">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT & QUICK CONNECT SECTION
+       ========================================== -->
+  <section id="contact" class="reveal-on-scroll">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Get In Touch</span>
+        <h2 class="section-title">Contact & Communication</h2>
+        <p class="section-subtitle">Available for full-time engineering and infrastructure opportunities. Send a message directly.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Left: Direct Contact Information -->
+        <div class="card-glass" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 1.5rem;">Direct Reachout</h3>
+            
+            <div class="contact-info-list">
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-item-text">
+                  <label>Official Email</label>
+                  <a href="#" class="js-secure-email">Loading...</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact-item-text">
+                  <label>Direct Phone</label>
+                  <a href="#" class="js-secure-phone">Loading...</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-item-text">
+                  <label>Location</label>
+                  <span>Aligarh, Uttar Pradesh, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; pt-3;">
+            <a href="https://linkedin.com/in/ahmadshaadzaki" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
+            </a>
+            <a href="https://github.com/ahmadshaadzaki" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">
+              <i class="fa-brands fa-github"></i> GitHub Profile
+            </a>
+            <a href="https://instagram.com/iahmadshaad" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">
+              <i class="fa-brands fa-instagram"></i> Instagram (@iahmadshaad)
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Secured Interactive Contact Form -->
+        <div class="card-glass">
+          <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 1.25rem;">Send a Message</h3>
+          
+          <form id="contactForm" novalidate>
+            <!-- Anti-Spambot Honeypot Trap Input (Must remain empty by genuine users) -->
+            <input type="text" name="hp_website_confirm" class="hp-field" tabindex="-1" autocomplete="off">
+
+            <div class="form-group">
+              <label for="formName" class="form-label">Your Name</label>
+              <input type="text" id="formName" name="name" class="form-input" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="formEmail" class="form-label">Your Email</label>
+              <input type="email" id="formEmail" name="email" class="form-input" placeholder="e.g. john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="formSubject" class="form-label">Subject</label>
+              <input type="text" id="formSubject" name="subject" class="form-input" placeholder="Role Inquiry / Discussion" required>
+            </div>
+
+            <div class="form-group">
+              <label for="formMessage" class="form-label">Message</label>
+              <textarea id="formMessage" name="message" class="form-textarea" placeholder="Hello Ahmad, I would like to connect..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="formSubmitBtn" style="width: 100%;">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+
+            <div id="formFeedback" class="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FLOATING WIDGETS
+       ========================================== -->
+  <div class="floating-actions">
+    <button class="floating-btn" id="scrollTopBtn" title="Scroll back to top" aria-label="Scroll to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <!-- ==========================================
+       MODAL OVERLAYS
+       ========================================== -->
+
+  <!-- 1. THEME SWITCHER MODAL -->
+  <div class="modal-overlay" id="themeModal">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+        <i class="fa-solid fa-palette" style="font-size: 1.5rem; color: var(--accent-primary);"></i>
+        <h3 style="font-size: 1.4rem; font-weight: 800;">Select Visual Theme</h3>
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.9rem;">Choose your preferred color theme. Your selection is automatically saved in your browser.</p>
+
+      <div class="theme-options-grid" id="themeOptionsGrid">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. PHOTO LIGHTBOX MODAL -->
+  <div class="modal-overlay" id="photoModal">
+    <div class="modal-box" style="max-width: 500px; text-align: center;">
+      <button class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      <img src="My photo.jpeg" alt="Ahmad Shaad Zaki Full Photo" style="width: 100%; border-radius: 16px; margin-bottom: 1rem; border: 3px solid var(--border-highlight);">
+      <h3 style="font-size: 1.25rem; font-weight: 800;">Ahmad Shaad Zaki</h3>
+      <p style="color: var(--accent-primary); font-size: 0.9rem; font-weight: 600;">B.Tech (CSE) Graduate — Computer Science & Engineering</p>
+    </div>
+  </div>
+
+  <!-- 4. DIGILOCKER DEGREE LIGHTBOX MODAL -->
+  <div class="modal-overlay" id="degreeModal">
+    <div class="modal-box" style="max-width: 800px; text-align: center;">
+      <button class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      <div style="margin-bottom: 0.75rem;">
+        <span class="digilocker-badge"><i class="fa-solid fa-circle-check"></i> Digitally Signed & Verified via DigiLocker</span>
+      </div>
+      <img src="BTech_Degree_DigiLocker.png" alt="Ahmad Shaad Zaki DigiLocker B.Tech Degree Certificate" style="width: 100%; border-radius: 12px; margin-bottom: 1rem; border: 2px solid var(--border-highlight); box-shadow: var(--shadow-lg);">
+      <h3 style="font-size: 1.25rem; font-weight: 800;">Bachelor of Technology (B.Tech) - Computer Science & Engineering</h3>
+      <p style="color: var(--accent-primary); font-size: 0.95rem; font-weight: 600;">Dr. A.P.J. Abdul Kalam Technical University, Uttar Pradesh (First Division, 2025)</p>
+    </div>
+  </div>
+
+  <!-- 5. RECRUITER QUICK CONTACT QR CODE MODAL -->
+  <div class="modal-overlay" id="qrModal">
+    <div class="modal-box" style="max-width: 480px; text-align: center;">
+      <button class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+        <i class="fa-solid fa-qrcode" style="font-size: 1.5rem; color: var(--accent-primary);"></i>
+        <h3 style="font-size: 1.35rem; font-weight: 800;">Recruiter Quick QR</h3>
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1.25rem;">Scan with smartphone camera to instantly access Ahmad's portfolio & contact info!</p>
+      
+      <div style="background: #ffffff; padding: 1.25rem; border-radius: 16px; display: inline-block; box-shadow: var(--shadow-lg); border: 2px solid var(--accent-primary);">
+        <img id="qrCodeImg" src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fahmadshaadzaki.github.io" alt="Ahmad Shaad Zaki vCard Portfolio QR Code" style="width: 200px; height: 200px; display: block; margin: 0 auto;">
+      </div>
+
+      <p style="font-size: 0.85rem; font-weight: 700; color: var(--accent-primary); margin-top: 1rem;">ahmadshaadzaki.github.io</p>
+      <p style="font-size: 0.8rem; color: var(--text-muted);">Email: <span class="js-secure-email">...</span> | Phone: <span class="js-secure-phone">...</span></p>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer>
+    <div class="container footer-content">
+      <div class="brand-logo">
+        <div class="brand-icon"><i class="fa-solid fa-terminal"></i></div>
+        <span>AHMAD SHAAD ZAKI</span>
+      </div>
+
+      <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 500px;">
+        B.Tech CSE Graduate | Computer Science & Engineering
+      </p>
+
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/ahmadshaadzaki" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-icon-only" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/ahmadshaadzaki" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-icon-only" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://instagram.com/iahmadshaad" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-icon-only" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+      <p style="color: var(--text-dim); font-size: 0.8rem;">
+        &copy; 2026 Ahmad Shaad Zaki. All Rights Reserved. Fully Secured Single-Page Application.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/security.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
