@@ -295,7 +295,53 @@ a:hover {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--accent-primary);
+  margin-bottom: 1rem;
+}
+
+.open-to-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   margin-bottom: 1.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  max-width: 650px;
+}
+
+.open-to-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.open-to-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.open-chip {
+  padding: 0.25rem 0.65rem;
+  border-radius: 8px;
+  background: rgba(255, 153, 0, 0.1);
+  border: 1px solid var(--border-highlight);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-main);
+  transition: all 0.25s ease;
+}
+
+.open-chip:hover {
+  background: var(--accent-primary);
+  color: #ffffff;
+  transform: translateY(-1px);
 }
 
 .status-dot {
