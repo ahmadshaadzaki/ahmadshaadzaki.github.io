@@ -29,6 +29,11 @@ export const metadata: Metadata = {
     'Resume Portfolio'
   ],
   authors: [{ name: 'Ahmad Shaad Zaki' }],
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
   openGraph: {
     title: 'Ahmad Shaad Zaki | IT Support & IAM Analyst Portfolio',
     description: 'Service Desk Associate & IT Support Engineer specializing in Active Directory DS, Windows Server, PowerShell automation, and IAM security lifecycle.',
@@ -49,6 +54,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
+        {/* Favicon & Tab Logo Icons */}
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="shortcut icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/icon.svg" />
+        
         {/* Static HTML Security Meta Policies */}
         <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
         <meta httpEquiv="X-Frame-Options" content="DENY" />
