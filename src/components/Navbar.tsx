@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import ThemeToggle from './ThemeToggle';
-import { Download, Menu, X, ShieldCheck } from 'lucide-react';
+import { Download, Menu, X } from 'lucide-react';
 import { resumeData } from '@/data/resumeData';
 
 export default function Navbar() {
@@ -27,11 +27,11 @@ export default function Navbar() {
         
         {/* Brand / Logo */}
         <a href="#hero" className="flex items-center space-x-2.5 group">
-          <div className="w-8 h-8 rounded-lg bg-emerald-600 dark:bg-emerald-500 text-white flex items-center justify-center font-bold text-sm shadow-md group-hover:scale-105 transition-transform">
-            AS
+          <div className="px-2.5 py-1 rounded-lg bg-emerald-600 dark:bg-emerald-500 text-white flex items-center justify-center font-bold text-xs sm:text-sm tracking-wider shadow-md group-hover:scale-105 transition-transform font-serif">
+            ASZ
           </div>
           <div>
-            <span className="font-serif font-bold text-lg tracking-tight text-zinc-900 dark:text-white block leading-none">
+            <span className="font-serif font-bold text-base sm:text-lg tracking-tight text-zinc-900 dark:text-white block leading-none">
               {resumeData.personalInfo.name}
             </span>
             <span className="text-[10px] uppercase tracking-wider text-emerald-600 dark:text-emerald-400 font-semibold block mt-0.5">
