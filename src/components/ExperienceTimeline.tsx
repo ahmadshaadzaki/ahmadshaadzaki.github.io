@@ -2,22 +2,32 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, ChevronUp, Briefcase, Server, Shield, Sparkles } from 'lucide-react';
+import { ChevronDown, ChevronUp, Briefcase, Server, Shield, Sparkles, Layers } from 'lucide-react';
 import { resumeData, ExperienceItem } from '@/data/resumeData';
 
 export default function ExperienceTimeline() {
-  // All items expanded by default for full information density
   const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({
     'exp-1': true,
     'exp-2': true,
     'exp-3': true,
   });
 
+  const allExpanded = Object.values(expandedItems).every(Boolean);
+
   const toggleExpand = (id: string) => {
     setExpandedItems((prev) => ({
       ...prev,
       [id]: !prev[id],
     }));
+  };
+
+  const toggleAll = () => {
+    const nextState = !allExpanded;
+    setExpandedItems({
+      'exp-1': nextState,
+      'exp-2': nextState,
+      'exp-3': nextState,
+    });
   };
 
   const getItemIcon = (type: ExperienceItem['type']) => {
@@ -36,17 +46,27 @@ export default function ExperienceTimeline() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-3xl mb-12">
-          <div className="inline-flex items-center space-x-2 text-xs font-semibold uppercase tracking-widest text-emerald-600 dark:text-emerald-400 mb-2">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Employment & Hands-on Labs</span>
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center space-x-2 text-xs font-semibold uppercase tracking-widest text-emerald-600 dark:text-emerald-400 mb-2">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>Employment & Hands-on Labs</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-zinc-900 dark:text-white tracking-tight">
+              Interactive Career Timeline
+            </h2>
+            <p className="text-zinc-600 dark:text-zinc-400 text-sm sm:text-base mt-2 font-sans">
+              Chronological mapping of professional experience, enterprise virtual lab deployment, and IT service management practice.
+            </p>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-serif font-bold text-zinc-900 dark:text-white tracking-tight">
-            Interactive Career Timeline
-          </h2>
-          <p className="text-zinc-600 dark:text-zinc-400 text-sm sm:text-base mt-2 font-sans">
-            Chronological mapping of professional experience, enterprise virtual lab deployment, and IT service management practice.
-          </p>
+
+          <button
+            onClick={toggleAll}
+            className="no-print self-start sm:self-auto inline-flex items-center space-x-2 px-3 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-xs font-semibold text-zinc-700 dark:text-zinc-300 hover:border-emerald-500 transition-colors shadow-sm cursor-pointer"
+          >
+            <Layers className="w-3.5 h-3.5 text-emerald-500" />
+            <span>{allExpanded ? 'Collapse All' : 'Expand All'}</span>
+          </button>
         </div>
 
         {/* Timeline Container */}
@@ -116,7 +136,7 @@ export default function ExperienceTimeline() {
 
                   {/* Expandable Details Block */}
                   <AnimatePresence>
-                    {(isExpanded || true) && (
+                    {isExpanded && (
                       <motion.div
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}

@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Cpu, Terminal, ShieldAlert, Wrench, Layers } from 'lucide-react';
+import { Cpu, Terminal, ShieldAlert, Wrench, Layers, CheckCircle2 } from 'lucide-react';
 import { resumeData } from '@/data/resumeData';
 
 export default function SkillsGrid() {
@@ -10,6 +10,21 @@ export default function SkillsGrid() {
     if (category.includes('Service Desk')) return <Wrench className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />;
     if (category.includes('Identity')) return <ShieldAlert className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />;
     return <Terminal className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />;
+  };
+
+  const getProficiencyStyle = (prof: string) => {
+    switch (prof) {
+      case 'Expert / Daily Use':
+        return 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800';
+      case 'Advanced Lab':
+        return 'bg-blue-100 text-blue-800 dark:bg-blue-950/80 dark:text-blue-300 border-blue-200 dark:border-blue-800';
+      case 'Core Skill':
+        return 'bg-zinc-100 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200 border-zinc-200 dark:border-zinc-700';
+      case 'Actively Learning':
+        return 'bg-amber-100 text-amber-800 dark:bg-amber-950/80 dark:text-amber-300 border-amber-200 dark:border-amber-800';
+      default:
+        return 'bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300';
+    }
   };
 
   return (
@@ -56,30 +71,27 @@ export default function SkillsGrid() {
                 </div>
               </div>
 
-              {/* Skill Bars & Tags List */}
-              <div className="space-y-4 pt-4 border-t border-zinc-100 dark:border-zinc-800">
+              {/* Skill Cards List */}
+              <div className="space-y-3 pt-4 border-t border-zinc-100 dark:border-zinc-800">
                 {cat.skills.map((skill, sIdx) => (
-                  <div key={sIdx} className="space-y-1.5 group/skill">
-                    <div className="flex items-center justify-between text-xs sm:text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                      <span className="group-hover/skill:text-emerald-600 dark:group-hover/skill:text-emerald-400 transition-colors">
+                  <div 
+                    key={sIdx}
+                    className="p-3 rounded-xl bg-zinc-50/70 dark:bg-zinc-950/60 border border-zinc-100 dark:border-zinc-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-emerald-500/40 transition-colors"
+                  >
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
+                      <span className="text-xs sm:text-sm font-semibold text-zinc-800 dark:text-zinc-200">
                         {skill.name}
                       </span>
-                      {skill.tag && (
-                        <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-emerald-700 dark:text-emerald-300">
-                          {skill.tag}
-                        </span>
-                      )}
                     </div>
 
-                    {/* Progress Bar Container */}
-                    <div className="w-full h-2 rounded-full bg-zinc-100 dark:bg-zinc-800 overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8, delay: sIdx * 0.05 }}
-                        className="h-full rounded-full bg-gradient-to-r from-emerald-500 to-teal-400 dark:from-emerald-500 dark:to-emerald-300"
-                      />
+                    <div className="flex items-center space-x-2 shrink-0">
+                      <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400">
+                        {skill.tag}
+                      </span>
+                      <span className={`text-[10px] font-semibold px-2 py-0.5 rounded border ${getProficiencyStyle(skill.proficiency)}`}>
+                        {skill.proficiency}
+                      </span>
                     </div>
                   </div>
                 ))}

@@ -14,7 +14,7 @@ export interface ExperienceItem {
 export interface SkillCategory {
   category: string;
   description: string;
-  skills: { name: string; level: number; tag?: string }[];
+  skills: { name: string; proficiency: 'Expert / Daily Use' | 'Advanced Lab' | 'Core Skill' | 'Actively Learning'; tag: string }[];
 }
 
 export interface ProjectItem {
@@ -47,18 +47,18 @@ export const resumeData = {
   personalInfo: {
     name: "AHMAD SHAAD ZAKI",
     headline: "Service Desk Associate & IT Support Engineer",
-    subheadline: "Aspiring Identity & Access Management (IAM) Specialist",
+    subheadline: "Specializing in Active Directory DS, Windows Server & IAM Security Fundamentals",
     location: "Aligarh, Uttar Pradesh (Open to Relocation across India)",
     email: "ahmadalig20@gmail.com",
     phone: "+91 82187 71108",
     linkedin: "https://linkedin.com/in/ahmadshaadzaki",
     github: "https://github.com/ahmadshaadzaki",
-    bio: "B.Tech (CSE) graduate with hands-on lab experience in Windows Server 2022/2025, Active Directory, PowerShell scripting, and networking fundamentals. Seeking entry-level Service Desk Associate, IT Helpdesk Engineer, or L1 Support Engineer roles with a focus on long-term specialization in Identity & Access Management (IAM).",
+    bio: "B.Tech (CSE) graduate with hands-on lab experience in Windows Server 2022/2025, Active Directory, PowerShell scripting, and networking fundamentals. Seeking entry-level Service Desk Associate, IT Helpdesk Engineer, or L1 Support Engineer roles with long-term specialization in Identity & Access Management (IAM).",
     stats: [
-      { label: "Hands-on Lab Hours", value: "500+" },
-      { label: "OS Environments", value: "Win Server / Linux" },
+      { label: "Virtual Lab Hours", value: "500+" },
+      { label: "OS Environments", value: "Win Server & Ubuntu" },
       { label: "Certification", value: "SC-900 (In Progress)" },
-      { label: "Ticket Resolution", value: "Tier 1 / L1 Prepared" },
+      { label: "Support Readiness", value: "Tier 1 / L1 Prepared" },
     ]
   },
 
@@ -69,10 +69,10 @@ export const resumeData = {
       company: "SoftNice India Pvt Ltd",
       period: "Jan 2022 – May 2022",
       type: "work",
-      summary: "Client coordination and candidate placement management in high-velocity US IT staffing environment.",
+      summary: "Client-facing coordination and candidate pipeline management in high-velocity US IT staffing environment.",
       highlights: [
-        "Coordinated directly with US-based enterprise clients on candidate technical requirements.",
-        "Managed outbound client communications, candidate sourcing, and preliminary technical alignment.",
+        "Coordinated directly with US-based enterprise clients on candidate technical requirements and job descriptions.",
+        "Managed outbound client communications, candidate sourcing, and preliminary technical qualification.",
         "Maintained CRM and internal database records to support end-to-end candidate placement workflow."
       ],
       technologies: ["CRM Tools", "Database Coordination", "Client Communication", "US IT Staffing"],
@@ -84,14 +84,14 @@ export const resumeData = {
       company: "Hands-on Home Lab",
       period: "Ongoing (2026)",
       type: "lab",
-      summary: "Full enterprise simulation environment built on VMware and VirtualBox featuring Windows Server 2022/2025 and Ubuntu Linux.",
+      summary: "Enterprise simulation environment built on VMware and VirtualBox featuring Windows Server 2022/2025 and Ubuntu Linux.",
       highlights: [
         "Deployed Active Directory Domain Services (AD DS) on Windows Server 2022/2025.",
-        "Configured Organizational Units (OUs), Group Policy Objects (GPOs), and managed user/computer objects.",
-        "Practiced PowerShell scripting for automated user provisioning and repetitive admin task workflows.",
+        "Configured Organizational Units (OUs), Group Policy Objects (GPOs), user/computer objects, and RBAC.",
+        "Practiced PowerShell scripting for automated user provisioning and administrative task automation.",
         "Utilized Ubuntu Linux daily for shell commands, SSH remote administration, and APT package management."
       ],
-      technologies: ["Windows Server 2022/2025", "Active Directory", "PowerShell", "VMware", "Ubuntu Linux", "GPO"],
+      technologies: ["Windows Server 2022/2025", "Active Directory DS", "PowerShell", "VMware", "Ubuntu Linux", "GPOs"],
       metrics: "Reduced manual AD user onboarding setup time by ~40% via PowerShell automation."
     },
     {
@@ -104,9 +104,9 @@ export const resumeData = {
       highlights: [
         "Enforced Least Privilege principles and group-based access control in Windows AD DS.",
         "Studied Microsoft 365 Admin Center basics: user/license management, Exchange Online & Teams admin concepts.",
-        "Studied ITIL Foundation v4 concepts for ITSM and ServiceNow ticket triage practices."
+        "Studied ITIL Foundation v4 concepts for ITSM service desk and ServiceNow ticket triage practices."
       ],
-      technologies: ["IAM Basics", "JML Lifecycle", "ServiceNow", "Microsoft 365 Admin", "RBAC", "SC-900"],
+      technologies: ["IAM Concepts", "JML Lifecycle", "ServiceNow", "Microsoft 365 Admin", "RBAC", "SC-900"],
       metrics: "100% alignment with standard Tier-1 ticket triage & access control security protocols."
     }
   ] as ExperienceItem[],
@@ -115,11 +115,11 @@ export const resumeData = {
     {
       id: "proj-1",
       title: "Multi-OS Virtual Enterprise Domain",
-      subtitle: "Full AD DS & Virtual Server Environment",
+      subtitle: "Full AD DS & Virtual Server Infrastructure",
       period: "2026",
-      problemSolved: "Simulated realistic corporate IT helpdesk and server administration scenarios without expensive physical infrastructure.",
+      problemSolved: "Simulated realistic corporate IT helpdesk and server administration scenarios without physical server costs.",
       techStack: ["Windows Server 2022/2025", "VMware Workstation", "Active Directory DS", "GPO", "Ubuntu Linux"],
-      quantifiableResult: "Built a fully functioning domain environment running 3 concurrent virtual nodes with full DNS/DHCP routing.",
+      quantifiableResult: "Built a functioning domain environment running 3 concurrent virtual nodes with full DNS/DHCP routing.",
       highlights: [
         "Configured domain controllers, created domain users and computer objects.",
         "Set up GPOs for password security policies, drive mapping, and desktop restriction rules.",
@@ -137,7 +137,7 @@ export const resumeData = {
       highlights: [
         "Created PowerShell scripts to parse user data from CSV files and auto-populate AD attributes.",
         "Automated random temporary password generation and forced password change on first logon.",
-        "Added log output generation for admin auditing."
+        "Added log output generation for administrative auditing."
       ]
     },
     {
@@ -161,40 +161,40 @@ export const resumeData = {
       category: "Operating Systems & Directory Services",
       description: "Core Windows Server and Linux administration capabilities",
       skills: [
-        { name: "Active Directory DS (OUs, GPOs, Objects)", level: 90, tag: "Expert Lab" },
-        { name: "Windows Server 2022 / 2025", level: 85, tag: "Daily Use" },
-        { name: "Windows 10 / 11 Desktop OS", level: 95, tag: "Advanced" },
-        { name: "Ubuntu Linux (CLI, SSH, APT)", level: 75, tag: "Hands-on" },
+        { name: "Active Directory DS (OUs, GPOs, Object Mgmt)", proficiency: "Expert / Daily Use", tag: "Enterprise Lab" },
+        { name: "Windows Server 2022 / 2025 Deployment", proficiency: "Advanced Lab", tag: "Daily Hands-on" },
+        { name: "Windows 10 / 11 Desktop Troubleshooting", proficiency: "Expert / Daily Use", tag: "End-User Support" },
+        { name: "Ubuntu Linux (Shell, SSH, APT)", proficiency: "Core Skill", tag: "Daily Use" },
       ]
     },
     {
       category: "Service Desk & ITSM Support",
       description: "Tier 1 / L1 troubleshooting, ticket triage, and end-user support",
       skills: [
-        { name: "Ticket Triage & Escalation (L1 / Tier 1)", level: 90, tag: "Core Capability" },
-        { name: "ServiceNow Working Knowledge", level: 80, tag: "ITSM Tool" },
-        { name: "ITIL v4 Framework Concepts", level: 80, tag: "In Progress" },
-        { name: "Hardware / Software Issue Diagnosis", level: 88, tag: "Troubleshooting" },
+        { name: "Ticket Triage & Escalation (L1 / Tier 1)", proficiency: "Expert / Daily Use", tag: "Core Capability" },
+        { name: "ServiceNow Ticket Management", proficiency: "Core Skill", tag: "ITSM Tool" },
+        { name: "ITIL v4 Framework Concepts", proficiency: "Actively Learning", tag: "In Progress" },
+        { name: "Hardware & Software Diagnostics", proficiency: "Expert / Daily Use", tag: "Troubleshooting" },
       ]
     },
     {
       category: "Identity & Access Management (IAM)",
       description: "User lifecycle, RBAC security, and access control fundamentals",
       skills: [
-        { name: "JML (Joiner-Mover-Leaver) Lifecycle", level: 85, tag: "IAM Core" },
-        { name: "RBAC & Principle of Least Privilege", level: 85, tag: "Security" },
-        { name: "Authentication / Authorization Basics", level: 80, tag: "SC-900 Prep" },
-        { name: "SSO & Multi-Factor Auth (MFA) Concepts", level: 78, tag: "Conceptual" },
+        { name: "JML (Joiner-Mover-Leaver) Lifecycle", proficiency: "Advanced Lab", tag: "IAM Core" },
+        { name: "RBAC & Principle of Least Privilege", proficiency: "Advanced Lab", tag: "Security Policy" },
+        { name: "Authentication & Authorization Basics", proficiency: "Core Skill", tag: "SC-900 Prep" },
+        { name: "SSO & Multi-Factor Auth (MFA) Concepts", proficiency: "Core Skill", tag: "Conceptual" },
       ]
     },
     {
-      category: "Cloud, Scripting & Utilities",
-      description: "Automation tools, cloud admin basics, and hypervisors",
+      category: "Cloud, Scripting & Virtualization",
+      description: "Automation tools, hypervisors, and cloud admin basics",
       skills: [
-        { name: "PowerShell Scripting (AD Automation)", level: 75, tag: "Actively Learning" },
-        { name: "Microsoft 365 Admin (Exchange/Teams)", level: 75, tag: "Self-Study" },
-        { name: "VMware & VirtualBox Hypervisors", level: 90, tag: "Lab Standard" },
-        { name: "Networking (TCP/IP, DNS, DHCP, Subnetting)", level: 82, tag: "Foundational" },
+        { name: "PowerShell Scripting (AD Automation)", proficiency: "Actively Learning", tag: "Daily Learning" },
+        { name: "Microsoft 365 Admin (Exchange/Teams)", proficiency: "Core Skill", tag: "Self-Study" },
+        { name: "VMware Workstation & VirtualBox", proficiency: "Expert / Daily Use", tag: "Lab Standard" },
+        { name: "Networking (TCP/IP, DNS, DHCP, Subnetting)", proficiency: "Core Skill", tag: "Foundational" },
       ]
     }
   ] as SkillCategory[],
