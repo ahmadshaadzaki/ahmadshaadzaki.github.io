@@ -1,12 +1,23 @@
 # Ahmad Shaad Zaki — Personal Portfolio & Interactive Resume
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-ahmadshaadzaki.github.io-059669?style=for-the-badge&logo=github&logoColor=white)](https://ahmadshaadzaki.github.io/)
+> 🌐 **Live Website Link**: [https://ahmadshaadzaki.github.io/](https://ahmadshaadzaki.github.io/)
+
+[![Live Demo](https://img.shields.io/badge/Live%20Website-ahmadshaadzaki.github.io-059669?style=for-the-badge&logo=github&logoColor=white)](https://ahmadshaadzaki.github.io/)
 [![Next.js 15](https://img.shields.io/badge/Next.js-15.1-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Deploy to GitHub Pages](https://github.com/ahmadshaadzaki/ahmadshaadzaki.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/ahmadshaadzaki/ahmadshaadzaki.github.io/actions/workflows/deploy.yml)
 
 A high-density, professional portfolio website and executive interactive resume built for **Ahmad Shaad Zaki**, Service Desk Associate, IT Support Engineer, and aspiring Identity & Access Management (IAM) Specialist.
+
+---
+
+## 🔗 Quick Website Access
+
+Click any of the links below to view the live website:
+
+* 🌐 **Primary Portfolio URL**: [https://ahmadshaadzaki.github.io/](https://ahmadshaadzaki.github.io/)
+* 💻 **GitHub Repository**: [https://github.com/ahmadshaadzaki/ahmadshaadzaki.github.io](https://github.com/ahmadshaadzaki/ahmadshaadzaki.github.io)
 
 ---
 
@@ -28,6 +39,8 @@ A high-density, professional portfolio website and executive interactive resume 
   - Highlights enterprise virtual domain labs, PowerShell Active Directory automation scripts, and ITSM service desk workflows with explicit **Problem Solved**, **Tech Stack Used**, and **Quantifiable Results**.
 - **🎓 Education & Certifications**:
   - B.Tech in CSE (AKTU), Diploma in CSE (UPBTE), and Microsoft SC-900 (Security, Compliance, and Identity) certification roadmap.
+- **📱 Instagram DM Integration**:
+  - Direct message form connected to Instagram DM (`@ahmadshaadzaki`), WhatsApp, and Email.
 - **🖨️ Print-Ready Executive Resume (`@media print`)**:
   - Pressing `Ctrl+P` or clicking **"Download Resume (PDF)"** automatically formats the layout into a standard 1-page paper resume.
 
@@ -74,12 +87,14 @@ To run this project locally on your machine:
 
 ---
 
-## 📬 Contact & Links
+## 📬 Contact & Direct Links
 
+- **Live Website**: [https://ahmadshaadzaki.github.io/](https://ahmadshaadzaki.github.io/)
 - **Email**: [ahmadalig20@gmail.com](mailto:ahmadalig20@gmail.com)
-- **Phone**: +91 82187 71108
+- **Instagram DM**: [instagram.com/ahmadshaadzaki](https://instagram.com/ahmadshaadzaki)
 - **LinkedIn**: [linkedin.com/in/ahmadshaadzaki](https://linkedin.com/in/ahmadshaadzaki)
 - **GitHub**: [github.com/ahmadshaadzaki](https://github.com/ahmadshaadzaki)
+- **Phone**: +91 82187 71108
 - **Location**: Aligarh, Uttar Pradesh (Open to Relocation across India)
 
 ---
