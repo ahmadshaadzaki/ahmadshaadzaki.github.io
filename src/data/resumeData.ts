@@ -53,6 +53,7 @@ export const resumeData = {
     phone: "+91 82187 71108",
     linkedin: "https://linkedin.com/in/ahmadshaadzaki",
     github: "https://github.com/ahmadshaadzaki",
+    instagram: "https://instagram.com/ahmadshaadzaki", // Instagram profile & direct DM link
     bio: "B.Tech (CSE) graduate with hands-on lab experience in Windows Server 2022/2025, Active Directory, PowerShell scripting, and networking fundamentals. Seeking entry-level Service Desk Associate, IT Helpdesk Engineer, or L1 Support Engineer roles with long-term specialization in Identity & Access Management (IAM).",
     stats: [
       { label: "Virtual Lab Hours", value: "500+" },
