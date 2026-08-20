@@ -34,6 +34,11 @@ export const metadata: Metadata = {
     description: 'Service Desk Associate & IT Support Engineer specializing in Active Directory DS, Windows Server, PowerShell automation, and IAM security lifecycle.',
     type: 'website',
   },
+  other: {
+    'X-Content-Type-Options': 'nosniff',
+    'X-Frame-Options': 'DENY',
+    'Referrer-Policy': 'strict-origin-when-cross-origin',
+  }
 };
 
 export default function RootLayout({
@@ -43,6 +48,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+      <head>
+        {/* Static HTML Security Meta Policies */}
+        <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
+        <meta httpEquiv="X-Frame-Options" content="DENY" />
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self';"
+        />
+      </head>
       <body className="min-h-screen bg-neo-bg dark:bg-neo-darkBg text-neo-text dark:text-neo-darkText antialiased selection:bg-emerald-500 selection:text-white">
         {children}
       </body>
