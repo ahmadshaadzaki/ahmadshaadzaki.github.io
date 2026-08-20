@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-main: #FAF9F6;
+    --surface-card: #FFFFFF;
+    --text-primary: #1A1A1A;
+    --text-muted: #52525B;
+    --border-color: #E4E4E7;
+    --accent: #059669;
+    --accent-light: #ECFDF5;
+  }
+
+  .dark {
+    --bg-main: #0B0F19;
+    --surface-card: #111827;
+    --text-primary: #F3F4F6;
+    --text-muted: #9CA3AF;
+    --border-color: #1F2937;
+    --accent: #10B981;
+    --accent-light: #064E3B;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Neo-Minimalist Glass / Border utilities */
+.neo-card {
+  background-color: var(--surface-card);
+  border: 1px solid var(--border-color);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.neo-card:hover {
+  border-color: var(--accent);
+}
+
+/* Print CSS Optimization */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm 15mm 12mm 15mm;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #111111 !important;
+    font-size: 10.5pt !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Hide interactive non-resume web UI elements */
+  .no-print, 
+  nav, 
+  .theme-toggle-btn, 
+  .cta-buttons, 
+  .interactive-hint,
+  footer,
+  .contact-form-container {
+    display: none !important;
+  }
+
+  /* Force print view containers */
+  .print-only {
+    display: block !important;
+  }
+
+  .print-container {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* Always expand timeline details for print */
+  .timeline-details {
+    display: block !important;
+    max-height: none !important;
+    opacity: 1 !important;
+  }
+
+  .print-page-break {
+    page-break-before: always;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: #111111 !important;
+  }
+}
+
+@media screen {
+  .print-only {
+    display: none !important;
+  }
+}
