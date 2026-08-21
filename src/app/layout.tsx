@@ -44,6 +44,9 @@ export const metadata: Metadata = {
     description: 'Service Desk Associate & IT Support Engineer specializing in Active Directory DS, Windows Server, PowerShell automation, and IAM security lifecycle.',
     type: 'website',
   },
+  verification: {
+    google: 'google3033034212598a48',
+  },
   other: {
     'X-Content-Type-Options': 'nosniff',
     'X-Frame-Options': 'DENY',
@@ -67,6 +70,9 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.ico?v=2" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
         
+        {/* Google Site Verification */}
+        <meta name="google-site-verification" content="google3033034212598a48" />
+
         {/* Static HTML Security Meta Policies */}
         <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
         <meta httpEquiv="X-Frame-Options" content="DENY" />
